@@ -1,0 +1,388 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        android:weightSum="10"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/textGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="AnimalZoundz"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- ROW 1 -->
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            android:rowCount="8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textGrid">
+
+            <!-- column 1 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="465dp"
+                tools:layout_editor_absoluteY="227dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/anka" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- column 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="73dp"
+                tools:layout_editor_absoluteY="104dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/apa" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- ROW 2 -->
+
+            <!-- column 1 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="388dp"
+                tools:layout_editor_absoluteY="749dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baver" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- column 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="219dp"
+                tools:layout_editor_absoluteY="749dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/elephant" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- ROW 3 -->
+
+            <!-- column 1 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="62dp"
+                tools:layout_editor_absoluteY="766dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gris" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- column 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="388dp"
+                tools:layout_editor_absoluteY="632dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hund" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- ROW 4 -->
+
+            <!-- column 1 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="219dp"
+                tools:layout_editor_absoluteY="616dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hona" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- column 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="62dp"
+                tools:layout_editor_absoluteY="633dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/isbjorn" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- ROW 5 -->
+
+            <!-- column 1 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="73dp"
+                tools:layout_editor_absoluteY="516dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/katt" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- column 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView10"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="204dp"
+                tools:layout_editor_absoluteY="483dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ko" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- ROW 6 -->
+
+            <!-- column 1 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="389dp"
+                tools:layout_editor_absoluteY="499dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lejon" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- column 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="375dp"
+                tools:layout_editor_absoluteY="328dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pingvin" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- ROW 7 -->
+
+            <!-- column 1 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView13"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="219dp"
+                tools:layout_editor_absoluteY="341dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sal" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- column 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView14"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="370dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zebra" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- ROW 8 -->
+
+            <!-- column 1 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView15"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="62dp"
+                tools:layout_editor_absoluteY="227dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kyckling" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- column 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView16"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="250dp"
+                tools:layout_editor_absoluteY="216dp"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/asna" />
+
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
