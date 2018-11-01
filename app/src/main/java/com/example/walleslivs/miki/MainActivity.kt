@@ -2,7 +2,7 @@ package com.example.walleslivs.miki
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
- //sho
+ //shooo
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
