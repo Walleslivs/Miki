@@ -1,25 +1,7 @@
-<set
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:interpolator="@android:anim/linear_interpolator"
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillAfter="true">
 
-    <translate
-        android:fromYDelta="8%"
-        android:toYDelta="-8%"
-        android:duration="300" />
-
-    <translate
-        android:startOffset="100"
-        android:fromYDelta="-8%"
-        android:toYDelta="8%"
-        android:duration="200" />
-
-    <translate
-        android:startOffset="100"
-        android:fromYDelta="0%"
-        android:toYDelta="0"
-        android:duration="200"
-        />
     <scale
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:duration="500"
@@ -42,5 +24,4 @@
         android:toXScale="1.0"
         android:toYScale="1.0">
     </scale>
-
 </set>

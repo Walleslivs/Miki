@@ -76,7 +76,8 @@ class MainActivity : AppCompatActivity() {
         zebra.setOnClickListener {
             val animation = AnimationUtils.loadAnimation(this, R.anim.bounce)
             zebra.startAnimation(animation)
-        }
+
+            }
     }
 }
 
