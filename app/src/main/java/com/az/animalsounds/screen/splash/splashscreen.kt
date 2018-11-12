@@ -1,8 +1,10 @@
-package com.example.walleslivs.miki
+package com.az.animalsounds.screen.splash
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.az.animalsounds.screen.animals.AnimalsActivity
+import com.example.walleslivs.miki.R
 
 class splashscreen : AppCompatActivity() {
 
@@ -15,7 +17,7 @@ class splashscreen : AppCompatActivity() {
                 try {
                      Thread.sleep(5000)
 
-                    val intent = Intent(baseContext, MainActivity::class.java)
+                    val intent = Intent(baseContext, AnimalsActivity::class.java)
                     startActivity(intent)
                 } catch (e: Exception) {
                     e.printStackTrace()
