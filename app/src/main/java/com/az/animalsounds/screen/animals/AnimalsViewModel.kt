@@ -9,10 +9,10 @@ import com.example.walleslivs.miki.R
 
 class AnimalsViewModel: ViewModel() {
 
-    val playsoundLiveData = MutableLiveData<String>()
+    val playsoundLiveData = MutableLiveData<Int>()
 
-    fun playsound(string: String){
-        playsoundLiveData.postValue(string)
+    fun playsound(resId: Int){
+        playsoundLiveData.postValue(resId)
     }
 
 }
