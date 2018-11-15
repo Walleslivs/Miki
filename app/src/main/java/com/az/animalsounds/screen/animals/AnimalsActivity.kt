@@ -6,10 +6,14 @@ import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.GridLayoutManager
+import android.support.v7.widget.LinearLayoutManager
 import android.view.animation.AnimationUtils
 import android.widget.ImageButton
+import com.az.animalsounds.data.AnimalRepository
 import com.az.animalsounds.utils.AudioPlayer
 import com.example.walleslivs.miki.R
+/*import com.example.walleslivs.miki.R.id.information*/
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -19,7 +23,27 @@ class AnimalsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val informationActivity : ImageButton = findViewById(R.id.information)
+        animals_list.setHasFixedSize(true)
+
+        animals_list.layoutManager = GridLayoutManager(this, 2)
+
+        val animals = AnimalRepository().get()
+        val adapter = AnimalAdapter();
+        adapter.setAnimals(animals);
+
+        animals_list.adapter = adapter
+
+
+    }
+}
+
+
+
+
+
+
+
+        /*val informationActivity : ImageButton = findViewById(R.id.information)
         information.setOnClickListener {
             val intent = Intent(this, InformationActivity :: class.java)
             startActivity(intent)
@@ -113,10 +137,11 @@ class AnimalsActivity : AppCompatActivity() {
             zebra.startAnimation(animation)
             viewModel.playsound(R.raw.zebrasound)
 
-        }
-    }
+
 }
+}
+}*/
 
 
 
-//hh
+

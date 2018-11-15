@@ -15,7 +15,7 @@ class splashscreen : AppCompatActivity() {
         val background = object : Thread() {
             override fun run() {
                 try {
-                     Thread.sleep(5000)
+                     Thread.sleep(1000)
 
                     val intent = Intent(baseContext, AnimalsActivity::class.java)
                     startActivity(intent)
