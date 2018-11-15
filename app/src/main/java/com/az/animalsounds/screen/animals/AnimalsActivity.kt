@@ -13,7 +13,7 @@ import android.widget.ImageButton
 import com.az.animalsounds.data.AnimalRepository
 import com.az.animalsounds.utils.AudioPlayer
 import com.example.walleslivs.miki.R
-/*import com.example.walleslivs.miki.R.id.information*/
+import com.example.walleslivs.miki.R.id.information
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -33,6 +33,10 @@ class AnimalsActivity : AppCompatActivity() {
 
         animals_list.adapter = adapter
 
+        information.setOnClickListener {
+            InformationActivity.start(this)
+        }
+
 
     }
 }
@@ -43,13 +47,9 @@ class AnimalsActivity : AppCompatActivity() {
 
 
 
-        /*val informationActivity : ImageButton = findViewById(R.id.information)
-        information.setOnClickListener {
-            val intent = Intent(this, InformationActivity :: class.java)
-            startActivity(intent)
-        }
 
-        val viewModel = ViewModelProviders
+
+        /*val viewModel = ViewModelProviders
                 .of(this)
                 .get(AnimalsViewModel::class.java)
 
