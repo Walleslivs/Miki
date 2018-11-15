@@ -19,11 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.az.animalsounds.screen.animals.AnimalsActivity"></activity>
+        <activity android:name="com.az.animalsounds.screen.animals.AnimalsActivity" />
         <activity
             android:name=".animalsounds"
             android:label="@string/title_activity_animalsounds"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.az.animalsounds.screen.animals.InformationActivity"></activity>
     </application>
 
 </manifest>

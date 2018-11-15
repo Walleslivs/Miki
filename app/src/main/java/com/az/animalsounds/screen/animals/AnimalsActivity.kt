@@ -3,6 +3,7 @@ package com.az.animalsounds.screen.animals
 import android.arch.lifecycle.Observer
 import android.media.MediaPlayer
 import android.arch.lifecycle.ViewModelProviders
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
@@ -17,6 +18,12 @@ class AnimalsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val informationActivity : ImageButton = findViewById(R.id.information)
+        information.setOnClickListener {
+            val intent = Intent(this, InformationActivity :: class.java)
+            startActivity(intent)
+        }
 
         val viewModel = ViewModelProviders
                 .of(this)
