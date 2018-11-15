@@ -12,7 +12,7 @@ import com.az.animalsounds.utils.AudioPlayer
 import com.example.walleslivs.miki.R
 import kotlinx.android.synthetic.main.activity_main.*
 
-//hghgh
+
 class AnimalsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

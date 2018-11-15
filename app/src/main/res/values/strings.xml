@@ -2,4 +2,5 @@
     <string name="app_name">Miki</string>
     <string name="title_activity_animalsounds">animalsounds</string>
     <string name="text_information_text">This app is made by students at Malmoe yrkeshogskola. The general propose is to learn children how different animals sounds in real life. The app is developed in Kotlin language.</string>
+    <string name="text_contact_text">Made by Johan Cesar, Mikael Belokozovski and Walid Al-Masoudi.</string>
 </resources>

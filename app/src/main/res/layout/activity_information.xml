@@ -9,26 +9,27 @@
 
     <TextView
         android:id="@+id/txt_informationtext"
-        android:layout_width="363dp"
+        android:layout_width="0dp"
         android:layout_height="140dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/text_information_text"
         android:textAlignment="textStart"
         android:textColor="@android:color/black"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/contactextview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="278dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/contactextview"
-        android:layout_width="363dp"
+        android:layout_width="0dp"
         android:layout_height="78dp"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Made by Johan Cesar, Mikael Belokozovski, Walid Al-Masoudi."
+        android:text="@string/text_contact_text"
         android:textAlignment="viewStart"
         android:textColor="@android:color/black"
         android:textSize="20sp"
@@ -39,7 +40,7 @@
 
     <TextView
         android:id="@+id/versiontextview"
-        android:layout_width="357dp"
+        android:layout_width="0dp"
         android:layout_height="39dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -51,15 +52,17 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="70dp"
-        app:layout_constraintBottom_toTopOf="@+id/informationtext"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_informationtext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/animalzoundz" />
+
 </android.support.constraint.ConstraintLayout>
