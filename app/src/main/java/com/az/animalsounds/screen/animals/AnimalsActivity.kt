@@ -39,7 +39,7 @@ class AnimalsActivity : AppCompatActivity() {
         }
 
 
-
+/*aaa*/
 
 
         viewModel.playsoundLiveData.observe(this, Observer {
