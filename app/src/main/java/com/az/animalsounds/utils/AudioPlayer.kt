@@ -15,6 +15,8 @@ class AudioPlayer {
         }
     }
 
+    //hej
+
     fun play(c: Context, rid: Int) {
         stop()
 
