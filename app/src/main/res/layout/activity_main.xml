@@ -34,12 +34,14 @@
 
     <ImageButton
         android:id="@+id/information"
-        android:layout_width="62dp"
-        android:layout_height="61dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        android:layout_width="41dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_info_details"
-        android:background="@drawable/bg"/>
+        app:srcCompat="@drawable/i2" />
+
 </android.support.constraint.ConstraintLayout>
