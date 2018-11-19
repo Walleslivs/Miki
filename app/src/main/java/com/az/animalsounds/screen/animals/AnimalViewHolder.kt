@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.ImageButton
 import com.az.animalsounds.data.AnimalPicture
 import com.example.walleslivs.miki.R
@@ -15,6 +16,8 @@ class AnimalViewHolder(itemView: View, viewModel: AnimalsViewModel):RecyclerView
 
     init {
         image.setOnClickListener {
+            val animation = AnimationUtils.loadAnimation(itemView.context, R.anim.bounce)
+            itemView.startAnimation(animation)
             viewModel.playsound(animal.sound)
         }
     }

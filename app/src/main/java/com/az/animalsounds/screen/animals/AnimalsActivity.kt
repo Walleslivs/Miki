@@ -1,15 +1,21 @@
 package com.az.animalsounds.screen.animals
 
 import android.arch.lifecycle.Observer
+import android.arch.lifecycle.ViewModel
 import android.media.MediaPlayer
 import android.arch.lifecycle.ViewModelProviders
+import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.GridLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.view.animation.AnimationUtils
 import com.az.animalsounds.data.AnimalRepository
 import com.example.walleslivs.miki.R
 import kotlinx.android.synthetic.main.activity_main.*
+import android.view.animation.LayoutAnimationController
+
+
 
 
 class AnimalsActivity : AppCompatActivity() {
@@ -45,6 +51,9 @@ class AnimalsActivity : AppCompatActivity() {
         viewModel.playsoundLiveData.observe(this, Observer {
             it?.let { MediaPlayer.create(this, it).start() }
         })
+
+
+
 /*
         animals_list.setOnClickListener {
             val animation = AnimationUtils.loadAnimation(this, R.anim.bounce)
