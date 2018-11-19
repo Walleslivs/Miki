@@ -4,12 +4,12 @@ import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
 import com.az.animalsounds.data.AnimalPicture
 
-class AnimalAdapter : RecyclerView.Adapter<AnimalViewHolder>() {
+class AnimalAdapter(val viewModel: AnimalsViewModel) : RecyclerView.Adapter<AnimalViewHolder>() {
 
     private var animals:List<AnimalPicture> = ArrayList();
 
     override fun onCreateViewHolder(parent: ViewGroup, type: Int): AnimalViewHolder {
-        return AnimalViewHolder.newInstance(parent)
+        return AnimalViewHolder.newInstance(parent, viewModel)
     }
     override fun onBindViewHolder(animalViewHolder: AnimalViewHolder, position: Int) {
         animalViewHolder.bind(animals[position])
