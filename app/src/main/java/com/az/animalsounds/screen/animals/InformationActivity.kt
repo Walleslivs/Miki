@@ -8,6 +8,7 @@ import android.widget.ImageButton
 import android.widget.TextView
 import com.example.walleslivs.miki.R
 
+/* sho*/ 
 class InformationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
